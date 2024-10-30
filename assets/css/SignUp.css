@@ -1,0 +1,137 @@
+ * {
+    margin: 0;
+    padding : 0
+ }
+
+ body {
+    background-image: url("../images/SUBG.svg");
+
+ }
+
+.container  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top : 50px ;
+    height: 550px;
+    width: 300px;
+    left : 600px;
+    border : 2px solid black ;
+    border-radius: 25px 30px;
+    box-shadow: 10px 10px rgb(0, 0, 0);
+    font-weight:bolder ;
+    font-size: 20px;
+    text-align: center;
+    border-radius : 15px;
+    border-width: 2px;
+    z-index : 1;
+    
+}
+
+.container > ul {
+    display: flex;
+    flex-direction: column;
+    gap : 25px;
+    width: auto;
+}
+
+.container:hover {
+    box-shadow : 15px 40px rgb(0 0 0 / 30%);
+    transition: all 2.1s;
+}
+
+
+
+ ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap : 30px ;
+    position: relative;
+    top : 40px;
+}
+
+
+.inputs  {
+    position: relative;
+    font-size: 15px;
+    border: 0px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+.inputs:hover  {
+    transition: all 2s;
+    border-radius: 35px ;
+    padding : 15px;
+    background-color: #ffe388;
+    transition: all 0.6s;
+}
+
+ h1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-decoration:underline;
+    color : whitesmoke;
+}
+
+.container:active {
+    height: 100px;
+    transition: all 3s;
+}
+
+.buttons {
+    font-size: 18px;
+    border : 1px solid rgb(255, 33, 4);
+    border-radius: 15px 20px;
+    padding: 5px;
+}
+
+.buttons:hover {
+    border: 2px solid rgb(112, 108, 101);
+    border-radius: 20px 20px;
+    padding : 10px;
+    transition: all 0.6s;
+    background-color: rgb(106, 133, 233);
+}
+#main-heading {
+    color: rgb(213, 180, 15);
+    text-decoration: none;
+    align-items: center;
+    font-size: 45px;
+}
+#main-heading:hover {
+    color: rgb(12, 66, 117);
+    transition: all 3s;
+    padding: 5px;
+    font-size: 65px;
+    align-items: center;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.981);
+    text-shadow: 2px 2px 8px rgb(0 0 0 / 99%);
+}
+    
+
+@keyframes ColorChange {
+    15% {
+        background-color : blue ;
+    }
+    25% {
+        background-color : yellow ;
+    }
+    50% {
+        background-color: purple;
+    }
+    75% {
+        background-color: #ff9a52;
+    }
+    100% {
+        background-color: rgb(235, 204, 183);
+    }
+} 
+
+/*animation: ColorChange 4s linear infinite;*/
